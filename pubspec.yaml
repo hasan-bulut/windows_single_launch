@@ -1,11 +1,10 @@
 name: windows_single_launch
-description: "Start Windows applications single instance at a time."
-version: 0.0.3
+description: "Launch Windows applications from a single instance. Brings the current instance to the front on each launch."
+version: 0.0.4
 
 platforms:
   windows:
 
-homepage: https://clomc.xyz
 repository: https://github.com/hasan-bulut/windows_single_launch
 issue_tracker: https://github.com/hasan-bulut/windows_single_launch/issues
 
@@ -17,7 +16,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
   flutter_test:

@@ -1,12 +1,8 @@
-import 'package:plugin_platform_interface/plugin_platform_interface.dart';
-
 import 'windows_single_launch_method_channel.dart';
 
-abstract class WindowsSingleLaunchPlatform extends PlatformInterface {
+abstract class WindowsSingleLaunchPlatform {
   /// Constructs a WindowsSingleLaunchPlatform.
-  WindowsSingleLaunchPlatform() : super(token: _token);
-
-  static final Object _token = Object();
+  WindowsSingleLaunchPlatform() : super();
 
   static WindowsSingleLaunchPlatform _instance = MethodChannelWindowsSingleLaunch();
 
@@ -19,7 +15,6 @@ abstract class WindowsSingleLaunchPlatform extends PlatformInterface {
   /// platform-specific class that extends [WindowsSingleLaunchPlatform] when
   /// they register themselves.
   static set instance(WindowsSingleLaunchPlatform instance) {
-    PlatformInterface.verifyToken(instance, _token);
     _instance = instance;
   }
 
