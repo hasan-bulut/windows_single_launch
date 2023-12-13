@@ -13,3 +13,7 @@
 ## 0.0.4
 
 * Readme added and some corrections made.
+
+## 0.0.5
+
+* Corrections made

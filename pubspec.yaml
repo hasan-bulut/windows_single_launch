@@ -1,6 +1,6 @@
 name: windows_single_launch
 description: "Launch Windows applications from a single instance. Brings the current instance to the front on each launch."
-version: 0.0.4
+version: 0.0.5
 
 platforms:
   windows:
